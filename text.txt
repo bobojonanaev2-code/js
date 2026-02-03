@@ -184,5 +184,106 @@ For (let i=0; i<5; i++)
 
 for(let i=0; i<5; i++)
 {alert (i) }
- задачи 
- 
+ задач 1 
+ let login = prompt("vvedite vash login");
+let password = prompt("vvedite vash parol");
+if (login === "admin" && password === "password"){
+    console.log("dostup razreshen");
+}else{
+    console.log("dostup zapreshen");
+}
+задача 2
+let number = + prompt("Введите число");
+let sum = 0
+for(let i = 1; i <= number; i++){
+    sum = sum + i;
+    console.log(sum);
+}
+
+задача 3 
+let n = +prompt("Введите число");
+
+if(n % 2 === 0){
+
+    let sum = 1
+    for(let i = 1; i < n; i++)
+    {
+        sum = sum + i;
+        console.log(sum);
+    }
+}
+else{
+    let multiplikation = 1;
+    for(let i = 0; i < n; i++)
+{
+    multiplication = multiplication * i;
+    console.log(multiplication);
+    задача 4
+    прирывание цыкла break и продолжение contineu 
+    обычно цыкл завершается при вычисление условия внутри значения false 
+    но мы можем выйти из цыкла в люоой момент м помощью специального оператора break
+    программа посчитывает вводимое сумму чисел до тех пор пока пользователь вводит их с клавы 
+    оператор break полностью прекращает выполнение цыкла и передает управление на блок кода за его телом
+    let sum = 0
+
+while (true){
+    let value = +prompt("vedite chislo")
+
+    if(!value) break;
+    sum = sum + value 
+}
+alert(sum); 
+    continue ПРИ выполнение оператора цыкл не прерывается а переходи тк след итерации(если условие вс еше равно true).
+    оператор использует если понятно что на текущем цыкле повтора больше делать нечего   
+    с помощью for и continue чтобы вывести только нечет значение от 0 до 10
+    for ( let i = 0; i <10; i++){
+    if( i % 2 === 0) continue;
+    alert(i) 
+}
+
+contin8ue необходимо для создания более сложных условий
+
+конструкция switch и case
+ исподльзуется для выполнения различных действий в зависимости от значения выражений 
+ она представляется собой альтернативу цепочки if else и обычно используется когда нужно сравнивать одно значение со множествым возможных вариантов
+ с клавы вводится число если число равно 3 то выводим результат мало если число то результат в точку если число равно 5 то результат много 
+ если число не равно 3 4 5 то выводим результат мимо 
+ let a =+prompt();
+
+switch(a){                                         
+    case 3: можнор комбинировать 
+        alert("malo");
+        break;
+    case 4:
+        alert("v tochku");
+        break;
+    case 5:
+        alert("mnogo");
+        break;
+    default:
+        alert("mimo");
+        break
+    }
+ДЗ НА SWITH CASE 
+ с клавиатуры вводится число от 0 до 3 включительно с помощью конструкии switch и case вывыедите результат.
+ если введеное число равно 0 то програма выведет вы ввели 0
+ если равно 1 то программа выведет вы ввели 1
+ если введеное число равно 2 или 3 то программа выводит результат вы ввели число 2 или 3 
+ при вводе других чисел программа выдаст результат число вне диапозона 
+ let a =+prompt();
+
+switch(a){
+    case 3:
+    case 2:
+        alert("vveli 2 ili 3");
+        break;
+    case 0:
+        alert("0");
+        break;
+    case 1:
+            alert("1");
+            break;
+    default:
+        alert("vne diapazona");
+        break
+    }

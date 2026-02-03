@@ -4,4 +4,4 @@ if (login === "admin" && password === "password"){
     console.log("dostup razreshen");
 }else{
     console.log("dostup zapreshen");
-}\
+}
