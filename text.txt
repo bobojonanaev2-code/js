@@ -287,3 +287,71 @@ switch(a){
         alert("vne diapazona");
         break
     }
+ФУНКЦИЯ JS
+function func() { //function declaration
+    alert('vsem privet')
+}
+ func() // вызов
+переменная обьявленая за пределами функции видны внутри тела функции 
+параметры это данные которые могу тбыть переданы функцию ввиде каких то значений или переменной
+параметры функции тесно связаны с телом функции 
+return делает возврат callbak
+function func(a, b) {
+    //console.log(a+b)
+    return a+b
+
+}
+let sum = func(3, 5)
+ console.log(sum)
+ arg function
+
+let func = (name) => {
+    let message = "privet, " + name
+    console.log(message)
+}
+func('dima')
+
+
+
+function sumALL() {
+    let sum = 0
+    for (let i = 0; i < arguments.length; i++){//цикл проходит по каждому аргументу пока не закончится 
+          sum = sum + arguments[i]
+    }
+     return sum
+} 
+console.log(sumALL(1, 2, 3, 4))
+
+напишите функцию которая принимает число и выводит результат  в квадрат этого числа
+function cor() {
+let a = +prompt ("введите число");
+a = a**2;
+alert(a);
+}
+ 
+cor()
+ 
+напишите функцию которая принимает два числа и возвращает в консоль большее из них
+let numCheck = (num1, num2) => {
+        if(num1 > num2)
+                console.log(num1)
+        else if(num1 < num2)
+                console.log(num2)
+        else{console.log("they are equal")}
+}
+ 
+numCheck(prompt(), prompt())
+ С клавиатуры вводится число от 0 до 3 включительно с помощью конструкции switch и case выведите результат,
+
+если введное число 0 = то 0
+
+если введеное число 1 = то 1
+
+если введенное число 2 или 3 то программа покажет вы ввели 2 и 3
+
+при вводе других чисел программа выдаст результат число вне диапазона от 0 до 3
+
+РЕАЛИЗОВАТЬ С ПОМОЩЬЮ ФУНКЦИИ. При этом, одна функция должна быть БЕЗ ПАРАМЕТРОВ/АРГУМЕНТОВ, а вторая функция - с параметрами/аргументами.
+ 
++ Решать задания code-basics.com (создать уч.запись). 
+ 
