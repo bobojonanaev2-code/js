@@ -1,4 +1,45 @@
+
+let number = + prompt("Введите число");
+    if (number>=10 && number<100){
+console.log("Вы ввели число в диапазоне от 10 до 100")
+    }
+    else {
+ console.log("Вы ввели число не входящее в диапозон от 10 до 100")   }
+
+
+ let number = + prompt("Введите число");
+let answer = number % 2;
+if (answer>0){
+    console.log("Вы ввели нечетное число")
+}
+else{
+    console.log("Вы ввели четное число")
+}
+
+
+let login = prompt("vvedite vash login");
+let password = prompt("vvedite vash parol");
+if (login === "admin" && password === "password"){
+    console.log("dostup razreshen");
+}else{
+    console.log("dostup zapreshen");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # learn.javascript.ru   --!
+
 # code-basics.com   --!
 
 Модуль 2 - Основа JavaScript.
@@ -355,3 +396,112 @@ numCheck(prompt(), prompt())
  
 + Решать задания code-basics.com (создать уч.запись). 
  
+
+ # ЗАДАЧА 1
+пользователь вводит сумму покупки с клавиатуры если сумма покупки от 1000 до 2000 то 
+выводиться результат скидка 10% если от 2000 до 5000 то скидка состовляет 15% и если покупка состоявлеят боллее 5000 то скидка 30%
+решить с помощью if else если сумма менье 1000 то без скидки 
+ # ЗАДАЧА 2 
+
+ пользователь вводит число от 1 до 7 с клавиатуры использую switch вывести название дня недели 
+ # ЗАДАЧА 3
+
+ вывести все простые числа от 2 до 100( простое число это число которое делиться на единиицу  и на саму себя)
+ # ЗАДАЧА 4
+
+ программа загадывает сулчайное число от 1 до 100 пользоватьель пытается 
+ while break math.random(a)
+
+# пользователб вводит с клавиатуры баллы по 3 предметам программа должна выводить результатом среднюю арифметическую и вывести оценку и при этом есть градация 90-100 баллов это 5
+ 75-89 это 4 
+ 60-74 это 3
+ все что ниже это 2
+
+
+ let pred = +prompt("введите балл 1 пред: ")
+let predd = +prompt("введите балл 2 пред: ")
+let preddd = +prompt("введите балл 3 пред: ")
+let res = (pred + predd + preddd)/3;
+if( res >= 90 && res <= 100){
+    alert("vasha ocenka 5")
+}
+else if( res >=75 && res <=89){
+    alert("vasha ocenka 4")
+}
+else if(res >= 60 && res <= 74){
+    alert("vasha ocenka 3")
+}
+else{
+    alert("vasha ocenka 2")
+} 
+
+
+# с клавиатуры вводится слово программа должна проверить есть ли буква к в этом слова iclude(a)
+решить эту задачу с приминением тернаного оператора 
+
+
+let slovo = prompt("введите слово:")
+let res = slovo.includes("K")
+let resultat = (res === true)?"в слове есть к":"в слове нет к"
+alert(resultat)
+
+
+
+
+# с клавитауры вводится слово вывести резальтат в консоль сколько символов
+let slovo = prompt("введите слово:")
+let result = slovo.length;
+console.log(result)
+
+
+
+# ПЕРВОЕ 
+let a = +prompt("выедите сумму покупок:")
+
+if (a > 2000 && a < 5000 ) 
+{ 
+console.log("ваша скидка 15%");
+}
+else if ( a > 5000)
+{
+console.log("ваша скидка 30%");
+}
+else if ( a > 1000 && a < 2000)
+{
+console.log("ваша скидка 10%");
+} 
+else if ( a < 1000)
+{
+console. log("у вас нету скидки");
+}  
+
+
+# ВТОРОЕ 
+let a = +prompt("vvedite chislo")
+
+switch(a){
+    case 1:
+        alert("ponedelnik");
+        break;
+    case 2:
+        alert("vtornik");
+        break;
+    case 3:
+         alert("sreda");
+         break;
+    case 4:
+         alert("chetverg");
+         break;
+    case 5:
+         alert("pyatnisa");
+         break;
+    case 6:
+        alert("subbota");
+              break;
+     case 7:
+          alert("voskresenie");
+          break;
+    default:
+        alert("vne diapazona");
+        break;
+    }
