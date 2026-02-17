@@ -505,3 +505,66 @@ switch(a){
         alert("vne diapazona");
         break;
     }
+# ФУНКЦИИ 
+//1. Function declaration
+//С параметрами/с аргументами
+// //С return
+// function sum(a, b) {
+//     return a + b //функция должна возвращать результат //callback
+// }
+ 
+// console.log(sum(3,2))//Вызов функции
+ 
+ 
+//Без параметров/без аргументов
+//Без return
+// function sum () {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log(c) //callback
+// }
+// sum()
+ 
+//2. Function expression
+//С параметрами/с аргументами и с return
+// const sum = function (a, b) {
+//     return a + b
+// }
+// console.log(sum(4,5))
+ 
+//Без параметров/без аргументов// без return
+// const sum = function () {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log(c)
+// }
+ 
+// sum()
+ 
+// console.log(typeof(sum))
+ 
+//3. Arrow function
+//С параметрами/с аргументами и с return
+// const sum = (a, b) => a + b
+// console.log(sum(3,2))
+ 
+// const sum = (a, b) => {
+//     return a + b
+// }
+// console.log(sum(3,2))
+ 
+ 
+//Без параметров/без аргументов// без return
+// const sum = () => {
+//     let a = 3
+//     let b = 2
+//     let c = a + b
+//     console.log (c)
+// }
+ 
+// sum()
+
+
+# ОБЬЕКТЫ 
